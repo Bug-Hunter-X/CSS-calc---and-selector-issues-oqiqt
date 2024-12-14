@@ -1,0 +1,21 @@
+/* bugSolution.css */
+
+/* Avoid using calc() with percentages and fixed units if possible.  Consider using alternative layout approaches or media queries to handle different screen sizes and contexts */
+.container {
+  width: 50%;
+  margin: 0 auto;
+  /* Fallback for older browsers without calc() support */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Use more specific selectors or ensure that the selectors match the HTML structure accurately */
+#element {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+} 
